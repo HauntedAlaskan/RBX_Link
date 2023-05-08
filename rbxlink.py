@@ -11,9 +11,7 @@ DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-verified_users = {}  # stores verified user IDs
-
-# verification code generator function
+verified_users = {}
 
 
 def generate_code():
@@ -22,7 +20,6 @@ def generate_code():
     return '-'.join(random.sample(words, 3))
 
 
-# function to check if user's about me contains verification code
 def check_about_me(user_id, verification_code):
     url = f"https://users.roblox.com/v1/users/{user_id}"
     response = requests.get(url)
