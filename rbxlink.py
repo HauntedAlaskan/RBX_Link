@@ -39,7 +39,6 @@ def generate_code():
     return ' '.join(random.sample(words, 6))
 
 
-# function to check if user's about me contains verification code
 def check_about_me(user_id, verification_code):
     url = f"https://users.roblox.com/v1/users/{user_id}"
     response = requests.get(url)
