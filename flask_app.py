@@ -27,7 +27,7 @@ def get_key():
 
 
 def run_flask_app():
-    app.run(debug=True)
+    app.run(debug=True, port=int(os.environ.get('PORT', 5000)))
 
 
 run_flask_app()
