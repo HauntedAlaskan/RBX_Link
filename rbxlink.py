@@ -159,4 +159,4 @@ async def verify(ctx):
     await ctx.send("Successfully verified your Roblox account!")
 
 
-bot.run("MTEwNDU0MzQ4Nzg5NjA1OTkzNQ.GJn3BF.iOezniMbR3GL2bU2LV0NZCEbJ-X4yNy7FAOUhM")
+bot.run(DISCORD_BOT_TOKEN)
