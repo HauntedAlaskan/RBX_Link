@@ -1,2 +1,2 @@
 worker: python rbxlink.py
-web: gunicorn app:app
+web: gunicorn flask_app:app
