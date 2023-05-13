@@ -87,7 +87,7 @@ async def getkey(ctx):
     await ctx.author.send(embed=embed)
 
     # Send the key to the Flask server
-    url = 'http://127.0.0.1:8000/getkey'
+    url = 'http://rbx-link.herokuapp.com/getkey'
     payload = {
         'user_id': verified_users[ctx.author.id]['roblox_user_id'],
         'key': key
